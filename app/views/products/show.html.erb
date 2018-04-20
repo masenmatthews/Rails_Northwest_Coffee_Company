@@ -8,7 +8,7 @@
 <% if @product.reviews.any? %>
   <ul>
     <% @product.reviews.each do |review| %>
-      <li><%= product.title %> |
+      <li><%= @product.title %> |
         <%=link_to "Edit review", edit_product_review_path(@product, review) %> |
         <%=link_to "Delete", product_review_path(@product, review),
           :data => {:confirm => "Are you sure?", :method => "delete"} %>
