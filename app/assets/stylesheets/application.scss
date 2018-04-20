@@ -1,2 +1,12 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.home-head {
+  text-align: center;
+}
+
+#home-text {
+  text-align: center;
+  font-size: 1.75em;
+}
