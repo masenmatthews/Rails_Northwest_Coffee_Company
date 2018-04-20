@@ -1,7 +1,12 @@
-<h1>Edit Product</h1>
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="home-head">Edit product</h1>
+  </div>
 
 <%= render "layouts/form" %>
 <p><%= link_to "Delete", product_path(@product),
   :data =>
     {:confirm => "Are you sure?",
      :method => "delete"} %></p>
+<p><%= link_to "Return to product page", product_path %><p>
+</div>
