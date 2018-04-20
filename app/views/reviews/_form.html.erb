@@ -1,10 +1,10 @@
 <%= render('layouts/errors', :object => @review) %>
 
 <%= form_for [@product, @review] do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :description %>
-  <%= f.text_field :description %>
+  <%= f.label :review_title %>
+  <%= f.text_field :review_title %>
+  <%= f.label :review_description %>
+  <%= f.text_field :review_description %>
   <%= f.label :rating %>
   <%= f.text_field :rating %>
   <p><%= f.submit %></p>
