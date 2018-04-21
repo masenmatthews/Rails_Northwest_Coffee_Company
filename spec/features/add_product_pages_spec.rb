@@ -1,17 +1,17 @@
 require 'rails_helper'
 
-# describe "the add an artist process" do
-#   it "adds a new artist" do
-#     visit new_artist_path
-#     fill_in 'Name', :with => 'Neutral Milk Hotel'
-#     fill_in 'Genre', :with => 'Indie folk'
-#     click_on 'Create Artist'
-#     expect(page).to have_content 'Artists'
-#   end
-#
-#   it "gives error when no name is entered" do
-#     visit new_artist_path
-#     click_on 'Create Artist'
-#     expect(page).to have_content 'errors'
-#   end
-# end
+describe "the add a product process" do
+  it "adds a new product" do
+    visit new_product_path
+    fill_in 'Title', :with => 'Grapes'
+    fill_in 'Description', :with => 'Small round fruits'
+    click_on 'Create Product'
+    expect(page).to have_content 'products'
+  end
+
+  it "gives error when no name is entered" do
+    visit new_product_path
+    click_on 'Create Product'
+    expect(page).to have_content 'errors'
+  end
+end
