@@ -6,7 +6,7 @@ describe "the add a product process" do
     fill_in 'Title', :with => 'Grapes'
     fill_in 'Description', :with => 'Small round fruits'
     click_on 'Create Product'
-    expect(page).to have_content 'products'
+    expect(page).to have_content 'Products'
   end
 
   it "gives error when no name is entered" do
