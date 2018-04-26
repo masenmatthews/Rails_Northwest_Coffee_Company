@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2018_04_20_205612) do
   create_table "products", force: :cascade do |t|
     t.string "title"
     t.string "description"
+    t.string "country"
   end
 
   create_table "reviews", force: :cascade do |t|

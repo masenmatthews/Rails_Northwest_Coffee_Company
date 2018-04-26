@@ -5,6 +5,8 @@ class CreateReviewsNew < ActiveRecord::Migration[5.2]
       t.column :review_description, :string
       t.column :rating, :integer
       t.column :product_id, :integer
+
+      t.timestamp
     end
   end
 end
