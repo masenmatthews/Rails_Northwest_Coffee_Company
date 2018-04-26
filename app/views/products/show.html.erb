@@ -1,6 +1,7 @@
 <div class="container">
   <div class="jumbotron">
       <h1 class="home-head"><%= @product.title %></h1>
+      <h3 class="home-head">Made in <%= @product.country %> </h3>
   </div>
 
 <p><%= link_to "Edit product", edit_product_path(@product) %></p>

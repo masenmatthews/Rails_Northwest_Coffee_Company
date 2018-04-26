@@ -2,7 +2,7 @@ Product.destroy_all
 Review.destroy_all
 
 50.times do |i|
-  Product.create!(title: Faker::DragonBall.character, description: Faker::Overwatch.quote)
+  Product.create!(title: Faker::DragonBall.character, description: Faker::Overwatch.quote, country: Faker::Address.country)
   @product_id = Product.last.id
   5.times do |i|
     @review_description = Faker::Seinfeld.quote
