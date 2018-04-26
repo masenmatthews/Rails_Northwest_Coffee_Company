@@ -7,5 +7,26 @@
 
   <p class="home-text"><%= link_to "Products", products_path %></p>
 
+  <h3 class="home-text"> Most reviewed: </h3>
+  <br>
+
+
+  <h3 class="home-text"> Three most recently added products </h3>
+  <br>
+
+
+
+  <h3 class="home-text"> Made in the USA: </h3>
+  <br>
+
+  <% @made_in_usa.each do |product| %>
+  <div class="panel panel-transparent">
+    <li>
+      <%= link_to product.title, product_path(product) %> |
+      <%= link_to "Edit", edit_product_path(product) %>
+    </li>
+  </div>
+  <% end %>
+  </ul>
 
 </div>
