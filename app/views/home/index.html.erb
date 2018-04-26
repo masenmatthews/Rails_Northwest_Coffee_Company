@@ -11,13 +11,9 @@
   <br>
 
   <% @most_reviewed_products.each do |product| %>
-    <li>
-      <div class="well">
       <p class="home-text">
       <%= link_to product.title, product_path(product) %>
     </p>
-  </div>
-    </li>
   <% end %>
 </div>
 
@@ -26,13 +22,9 @@
   <br>
 
   <% @most_reviewed_products.each do |product| %>
-    <li>
-      <div class="well">
       <p class="home-text">
       <%= link_to product.title, product_path(product) %>
     </p>
-  </div>
-    </li>
   <% end %>
 </div>
 
@@ -40,12 +32,8 @@
   <br>
 
   <% @made_in_usa.each do |product| %>
-    <li>
-      <div class="well">
-      <p class="home-text">
+    <p class="home-text">
       <%= link_to product.title, product_path(product) %>
     </p>
-  </div>
-    </li>
   <% end %>
 </div>
