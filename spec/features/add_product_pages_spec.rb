@@ -5,7 +5,7 @@ describe "the add a product process" do
     visit new_product_path
     fill_in 'Title', :with => 'Grapes'
     fill_in 'Description', :with => 'Small round fruits'
-    fill_in 'Country of Origin', :with => 'USA'
+    fill_in 'Country', :with => 'USA'
     click_on 'Create Product'
     expect(page).to have_content 'Products'
   end
