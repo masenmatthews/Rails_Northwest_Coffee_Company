@@ -1,11 +1,11 @@
-# _Masen's Speciality Foods_
+# _Northwest Quality Coffee Products_
 
-#### _An application that simulates a website for a specialty food store {April 20, 2018}_
+#### _An application that simulates a website for a specialty coffee store {April 20, 2018}_
 
 #### By _Masen Matthews_
 
 ## Description
-  _This application simulates the website for a specialty food store and includes many of the features that a user would expect to find when visiting the website for that sort of environment. The site specifically allows users to create, read, update, and delete products. It also allows users to see reviews for the products._
+  _This application simulates the website for a specialty coffee store and includes many of the features that a user would expect to find when visiting the website for that sort of environment. The site specifically allows users to create, read, update, and delete products. It also allows users to see reviews for the products._
 
 ## Specifications / User Expectations
   1. User can create a product in the store database
