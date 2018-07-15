@@ -1,4 +1,4 @@
-# _Northwest Quality Coffee Products_
+# _Northwest Coffee Company_
 
 #### _An application that simulates a website for a specialty coffee store {April 20, 2018}_
 
@@ -25,6 +25,7 @@
 * _Run $ rails server to launch the Rails server - the application can be viewed in a web browser by navigating to localhost:3000_
 
 ## Known Bugs
+
 N/A
 
 ## Support and contact details
@@ -35,7 +36,9 @@ Support questions, ideas, suggestions, and other contact inquiries can be direct
 
 ## Technologies Used
 
-This application was created with Ruby On Rails.
+This application utilizes the following technologies:
+  -Ruby On Rails
+  -Faker (for seeding)
 
 ### License
 

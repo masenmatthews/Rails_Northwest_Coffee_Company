@@ -2,11 +2,95 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background-image: url("coffee-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+// .textbox {
+//   background: grey;
+//   text-align: center;
+//   padding: 16px;
+//   margin: 8px;
+//   display: block;
+//   width: 30%;
+// }
+
 .home-head {
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 .home-text {
   text-align: center;
   font-size: 1.75em;
+}
+
+.main-header {
+  width: 100%;
+  position: fixed;
+  background-color: grey;
+  padding: 8px 16px;
+}
+
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 74px);
+  vertical-align: middle;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+  color: white;
+  background: maroon;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: maroon;
+  background: white;
+  border: none;
 }

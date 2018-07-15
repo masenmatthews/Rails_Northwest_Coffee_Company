@@ -1,43 +1,40 @@
-<div class="container">
-  <div class="jumbotron">
-    <h1 class="home-head">Northwest Quality Coffee Products</h1>
+<div class="home-background">
+  <div class="container">
+
+    <h1 class="home-head">Northwest Coffee Company</h1>
+
+    <p class="home-text">Welcome to Northwest Coffee Company! We offer a wide variety of unique coffees. This marketplace carries everything from exotic, imported speciality coffees to simple dark roasts that were produced here in the USA. Feel free to take a look around!</p>
+
+    <p class="home-text">All of our products are responsibily sourced and we work closely with all of our suppliers to ensure that everything fits our standards. If you would like to navigate through our current offerings, feel free to navigate to the "products" section of the website, which can be found at the top of this page.</p>
+
+    <p class="home-text"><%= link_to "Products", products_path %></p>
+
+    <h3 class="home-text"> Most reviewed: </h3>
+    <br>
+
+    <% @most_reviewed_products.each do |product| %>
+        <p class="home-text">
+        <%= link_to product.title, product_path(product) %>
+      </p>
+    <% end %>
+
+    <h3 class="home-text"> Three most recently added products </h3>
+    <br>
+
+    <% @most_reviewed_products.each do |product| %>
+        <p class="home-text">
+        <%= link_to product.title, product_path(product) %>
+      </p>
+    <% end %>
+
+    <!-- <h3 class="home-text"> Made in the USA: </h3>
+    <br>
+
+    <% @made_in_usa.each do |product| %>
+      <p class="home-text">
+        <%= link_to product.title, product_path(product) %>
+      </p>
+    <% end %> -->
+
   </div>
-
-  <p class="home-text">Welcome to Northwest Quality Coffee Products! We offer a wide variety of unique coffees. We carry everything from exotic, imported speciality coffees to simple dark roasts that were produced right here in the USA. Feel free to take a look around!</p>
-
-  <p class="home-text">Please note that all of our products are responsibily sourced. We work closely with all of our suppliers to ensure that our coffees aren't produced in the name of exploitation or greed. For more information, take a look at our mission statement.</p>
-
-  <p class="home-text">If you would like to navigate through our current offerings, feel free to navigate to the "products" section of the website, which can be found at the top of this page.</p>
-
-  <p class="home-text"><%= link_to "Products", products_path %></p>
-
-  <h3 class="home-text"> Most reviewed: </h3>
-  <br>
-
-  <% @most_reviewed_products.each do |product| %>
-      <p class="home-text">
-      <%= link_to product.title, product_path(product) %>
-    </p>
-  <% end %>
-</div>
-
-
-  <h3 class="home-text"> Three most recently added products </h3>
-  <br>
-
-  <% @most_reviewed_products.each do |product| %>
-      <p class="home-text">
-      <%= link_to product.title, product_path(product) %>
-    </p>
-  <% end %>
-</div>
-
-  <h3 class="home-text"> Made in the USA: </h3>
-  <br>
-
-  <% @made_in_usa.each do |product| %>
-    <p class="home-text">
-      <%= link_to product.title, product_path(product) %>
-    </p>
-  <% end %>
 </div>
