@@ -12,19 +12,17 @@
   <body>
     <header class="main-header">
       <div>
-        <a href="index.html" class="main-header__brand">
-          NWCC
-        </a>
+        <%= link_to "NWCC", '/', {:class => "main-header__brand"}%>
       </div><nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a href="packages/index.html">Placeholder</a>
+            <%= link_to "Products", products_path %>
           </li>
           <li class="main-nav__item">
-            <a href="customers/index.html">Placeholder</a>
+            <%= link_to "About" %>
           </li>
           <li class="main-nav__item main-nav__item--cta">
-            <a href="start-hosting/index.html">Placeholder</a>
+            <%= link_to "Contact" %>
           </li>
         </ul>
       </nav>
