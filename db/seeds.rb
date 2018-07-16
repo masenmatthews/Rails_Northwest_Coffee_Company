@@ -2,7 +2,7 @@ Product.destroy_all
 Review.destroy_all
 
 50.times do |i|
-  Product.create!(title: Faker::Food.dish, description: Faker::Coffee.notes, country: Faker::Address.country)
+  Product.create!(title: Faker::Food.dish, description: Faker::Coffee.notes, country: Faker::Address.country, created_at: Faker::Date.between(365.days.ago, Date.today) )
   @product_id = Product.last.id
   5.times do |i|
     @review_description = Faker::Lorem.characters(200)

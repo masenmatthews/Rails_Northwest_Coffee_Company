@@ -10,8 +10,8 @@ class Product < ActiveRecord::Base
     .limit(3)
     }
 
-  scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
-
-  scope :made_in_usa, -> { where(country: "USA")}
+  scope :three_most_recently_added, -> {
+    order(:created_at => :desc).limit(3)
+  }
 
 end
