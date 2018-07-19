@@ -4,19 +4,11 @@
 
 body {
   background-image: url("coffee-background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
-
-// .textbox {
-//   background: grey;
-//   text-align: center;
-//   padding: 16px;
-//   margin: 8px;
-//   display: block;
-//   width: 30%;
-// }
 
 .home-head {
   text-align: center;
@@ -28,13 +20,13 @@ body {
 
 .home-text {
   text-align: center;
-  font-size: 1.75em;
+  font-size: 1.25em;
 }
 
 .main-header {
   width: 100%;
-  position: fixed;
   background-color: grey;
+  padding-bottom: 70px;
   padding: 8px 16px;
 }
 
@@ -55,12 +47,6 @@ body {
   text-align: right;
   width: calc(100% - 74px);
   vertical-align: middle;
-}
-
-.main-nav__items {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .main-nav__item {

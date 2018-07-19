@@ -1,33 +1,31 @@
-<div class="home-background">
-  <div class="container">
+<section class="home-head">
+  <h1 class="home-head">Northwest Coffee Company</h1>
+</section>
 
-    <h1 class="home-head">Northwest Coffee Company</h1>
+<section class="home-text">
+  <p class="home-text">Welcome to Northwest Coffee Company! We offer a wide variety of unique coffees. This marketplace carries everything from exotic, imported speciality coffees to simple dark roasts that were produced here in the USA. Feel free to take a look around!</p>
 
-    <p class="home-text">Welcome to Northwest Coffee Company! We offer a wide variety of unique coffees. This marketplace carries everything from exotic, imported speciality coffees to simple dark roasts that were produced here in the USA. Feel free to take a look around!</p>
+  <p class="home-text">All of our products are responsibily sourced and we work closely with all of our suppliers to ensure that everything fits our standards. If you would like to navigate through our current offerings, feel free to navigate to the "products" section of the website, which can be found at the top of this page.</p>
+</section>
 
-    <p class="home-text">All of our products are responsibily sourced and we work closely with all of our suppliers to ensure that everything fits our standards. If you would like to navigate through our current offerings, feel free to navigate to the "products" section of the website, which can be found at the top of this page.</p>
+<section class="most-reviewed-products-box">
+  <h3 class="home-text"> Most reviewed: </h3>
+  <br>
 
-    <section class="most-reviewed-products-box">
-      <h3 class="home-text"> Most reviewed: </h3>
-      <br>
+  <% @most_reviewed_products.each do |product| %>
+      <p class="home-text">
+      <%= link_to product.title, product_path(product) %>
+    </p>
+  <% end %>
+</section>
 
-      <% @most_reviewed_products.each do |product| %>
-          <p class="home-text">
-          <%= link_to product.title, product_path(product) %>
-        </p>
-      <% end %>
-    </section>
+<section class="recently-added-products-box">
+  <h3 class="home-text"> Three most recently added products </h3>
+  <br>
 
-
-    <section class="recently-added-products-box">
-    <h3 class="home-text"> Three most recently added products </h3>
-    <br>
-
-    <% @three_most_recently_added.each do |product| %>
-        <p class="home-text">
-        <%= link_to product.title, product_path(product) %>
-      </p>
-    <% end %>
-
-  </div>
-</div>
+  <% @three_most_recently_added.each do |product| %>
+      <p class="home-text">
+      <%= link_to product.title, product_path(product) %>
+    </p>
+  <% end %>
+</section>

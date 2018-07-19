@@ -4,29 +4,15 @@
     <title>Northwest Quality Coffee Products</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <header class="main-header">
-      <div>
-        <%= link_to "NWCC", '/', {:class => "main-header__brand"}%>
-      </div><nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item">
-            <%= link_to "Products", products_path %>
-          </li>
-          <li class="main-nav__item">
-            <%= link_to "About" %>
-          </li>
-          <li class="main-nav__item main-nav__item--cta">
-            <%= link_to "Contact" %>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <%= yield %>
+    <%= render 'layouts/navbar' %>
+    <%= flash[:alert] %>
+    <%= flash[:notice] %>
+    <!-- <div class="container"> -->
+      <%= yield %>
+    <!-- </div> -->
   </body>
 </html>
