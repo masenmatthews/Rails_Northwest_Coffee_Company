@@ -8,9 +8,10 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat stretch;
 }
 
-.home-head {
+.home-head__item {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -19,6 +20,11 @@ body {
 }
 
 .home-text {
+  border: 3px solid;
+  background:rgba(255,255,255,0.5);
+}
+
+.home-text__item {
   text-align: center;
   font-size: 1.25em;
 }
@@ -79,4 +85,19 @@ body {
   color: maroon;
   background: white;
   border: none;
+}
+
+.recently-added-products-box {
+  border: 3px solid;
+  background:rgba(255,255,255,0.5);
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.most-reviewed-products-box {
+  border: 3px solid;
+  background:rgba(255,255,255,0.5);
+  display: inline-block;
+  margin-top: 5px;
+
 }
