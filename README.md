@@ -14,6 +14,9 @@
   4. User can view reviews for individual products and see ratings associated with them
   5. User can add their own review of a product
 
+## Live Preview
+  _This application is viewable on Heroku. To view it, please visit https://murmuring-wildwood-94431.herokuapp.com/ ._
+
 ## Setup/Installation Requirements
 
 * _Clone GitHub repository to desktop or desired directory_
