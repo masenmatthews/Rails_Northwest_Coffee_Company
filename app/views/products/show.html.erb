@@ -8,15 +8,15 @@
   <%= button_to "Delete product", {:controller => :products,
         :action => 'destroy', :id => @product.id }, :method => :delete %>
 
-  <h3 class="home-head">See what people are saying about <%= @product.title %>: </h3>
 
-  <section class="review-box">
+  <section class="info-box">
+    <h3 class="home-head">See what people are saying about <%= @product.title %>: </h3>
     <% if @product.reviews.any? %>
       <ul>
         <% @product.reviews.each do |review| %>
           <li>
               <h3>Rating: <%= review.rating %></h3>
-              <h3>Review: <%= review.review_title %></h3> 
+              <h3>Review: <%= review.review_title %></h3>
             <!-- <%=link_to "Edit review", edit_product_review_path(@product, review) %> | -->
 
             <!-- delete function not working - commenting out for now -->
