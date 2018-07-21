@@ -1,7 +1,7 @@
 <div class="container">
     <h1 class="home-head">Products</h1>
-    
-  <ul>
+
+  <ul class="product-list">
     <% @products.each do |single_product| %>
       <li><%= link_to single_product.title, product_path(single_product) %> | <%= single_product.description %></li>
     <% end %>
