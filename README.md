@@ -15,7 +15,7 @@
   5. User can add their own review of a product
 
 ## Live Preview
-  _This application is viewable on Heroku. To view it, please visit https://murmuring-wildwood-94431.herokuapp.com/ ._
+  This application is viewable on Heroku. To view it, please visit https://murmuring-wildwood-94431.herokuapp.com/
 
 ## Setup/Installation Requirements
 
