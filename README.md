@@ -29,7 +29,7 @@
 
 ## Known Bugs
 
-N/A
+Background image zooms in on the index page for "products". I've played around with things in hopes of fixing the problem, but it persists regardless. Given the minor nature of the issue, I've decided to leave it be.
 
 ## Support and contact details
 
@@ -40,8 +40,9 @@ Support questions, ideas, suggestions, and other contact inquiries can be direct
 ## Technologies Used
 
 This application utilizes the following technologies:
-  -Ruby On Rails
+  -Ruby / Ruby On Rails
   -Faker (for seeding)
+  -Postgres/SQL database
 
 ### License
 
