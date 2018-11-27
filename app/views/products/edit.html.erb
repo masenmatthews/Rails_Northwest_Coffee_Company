@@ -1,10 +1,11 @@
-<div class="container">
-  <h1 class="home-head">Edit product</h1>
+<h1 class="home-head">Edit product</h1>
 
+<section class="info-box">
+  <br>
   <%= render "layouts/form" %>
   <p><%= link_to "Delete", product_path(@product),
     :data =>
       {:confirm => "Are you sure?",
        :method => "delete"} %></p>
   <p><%= link_to "Return to product page", product_path %><p>
-</div>
+</section>

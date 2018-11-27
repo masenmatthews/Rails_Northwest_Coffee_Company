@@ -1,15 +1,19 @@
-<header class="main-header">
-  <div>
-    <%= link_to "NWCC", '/', {:class => "main-header__brand"}%>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div>
+        <div class="navbar-brand"><%= link_to "NWCC", root_path %></div>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="main-nav__item">
+          <%= link_to "Products", products_path %>
+        </li>
+        <li class="main-nav__item">
+          <%= link_to "Contact", contacts_path %>
+        </li>
+      </ul>
+    </div>
   </div>
-  <nav class="main-nav">
-    <ul class="main-nav__items">
-      <li class="main-nav__item">
-        <%= link_to "Products", products_path %>
-      </li>
-      <li class="main-nav__item main-nav__item--cta">
-        <%= link_to "Contact", contacts_path %>
-      </li>
-    </ul>
-  </nav>
-</header>
+</nav>

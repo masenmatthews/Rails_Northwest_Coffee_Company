@@ -1,5 +1,7 @@
 <%= render('layouts/errors', :object => @review) %>
 
+<section class="info-box">
+<br>
 <%= form_for [@product, @review] do |f| %>
   <%= f.label :review_title %>
   <%= f.text_field :review_title %>
@@ -9,3 +11,4 @@
   <%= f.text_field :rating %>
   <p><%= f.submit %></p>
 <% end %>
+</section>

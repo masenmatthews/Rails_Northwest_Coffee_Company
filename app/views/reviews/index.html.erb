@@ -1,11 +1,8 @@
-<div class="container">
+<ul>
+  <% @products.each do |single_product| %>
+    <li><%= link_to single_product.name, edit_product_path(single_product) %></li>
+    <%= single_product.description %>
+  <% end %>
+</ul>
 
-  <ul>
-    <% @products.each do |single_product| %>
-      <li><%= link_to single_product.name, edit_product_path(single_product) %></li>
-      <%= single_product.description %>
-    <% end %>
-  </ul>
-
-  <p><%= link_to "Add new product", new_product_path %></p>
-</div>
+<p><%= link_to "Add new product", new_product_path %></p>

@@ -11,6 +11,14 @@ body {
   background-repeat: no-repeat stretch;
 }
 
+.home-head {
+  color: white;
+}
+
+.detail-head {
+  color: black;
+}
+
 .home-head__item {
   text-align: center;
   margin-top: 5px;
@@ -51,11 +59,9 @@ body {
   font-size: 22px;
 }
 
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 74px);
-  vertical-align: middle;
+.navbar {
+  background-color:rgba(247,249,250,0.7);
+  border: black 3px;
 }
 
 .main-nav__item {
@@ -73,21 +79,7 @@ body {
 .main-nav__item a:hover,
 .main-nav__item a:active {
   color: white;
-  border-bottom: 5px solid white;
-}
-
-.main-nav__item--cta a {
-  color: white;
-  background: maroon;
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
-  color: maroon;
-  background: white;
-  border: none;
+  border-bottom: 3px solid black;
 }
 
 .info-box {
@@ -96,4 +88,8 @@ body {
   display: inline-block;
   margin-top: 5px;
   padding-left: 5px;
+}
+
+.product-list {
+  color: white;
 }

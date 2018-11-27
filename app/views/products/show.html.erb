@@ -1,34 +1,31 @@
-<div class="container">
-  <h1 class="home-head"><%= @product.title %></h1>
-  <h3 class="home-head">Made in <%= @product.country %> </h3>
+<h1 class="home-head"><%= @product.title %></h1>
+<h3 class="home-head">Made in <%= @product.country %> </h3>
 
-  <p><%= link_to "Edit product", edit_product_path(@product) %></p>
-  <p><%= link_to "Return to products", products_path %></p>
-  <p><%= link_to "Add new review", new_product_review_path(@product) %></p>
-  <%= button_to "Delete product", {:controller => :products,
-        :action => 'destroy', :id => @product.id }, :method => :delete %>
+<p><%= link_to "Edit product", edit_product_path(@product) %></p>
+<p><%= link_to "Return to products", products_path %></p>
+<p><%= link_to "Add new review", new_product_review_path(@product) %></p>
+<%= button_to "Delete product", {:controller => :products,
+      :action => 'destroy', :id => @product.id }, :method => :delete %>
 
 
-  <section class="info-box">
-    <h3 class="home-head">See what people are saying about <%= @product.title %>: </h3>
-    <% if @product.reviews.any? %>
-      <ul>
-        <% @product.reviews.each do |review| %>
-          <li>
-              <h3>Rating: <%= review.rating %></h3>
-              <h3>Review: <%= review.review_title %></h3>
-            <!-- <%=link_to "Edit review", edit_product_review_path(@product, review) %> | -->
+<section class="info-box">
+  <h3 class="detail-head">See what people are saying about <%= @product.title %>: </h3>
+  <% if @product.reviews.any? %>
+    <ul>
+      <% @product.reviews.each do |review| %>
+        <li>
+            <h3>Rating: <%= review.rating %></h3>
+            <h3>Review: <%= review.review_title %></h3>
+          <!-- <%=link_to "Edit review", edit_product_review_path(@product, review) %> | -->
 
-            <!-- delete function not working - commenting out for now -->
+          <!-- delete function not working - commenting out for now -->
 
-            <!-- <%=link_to "Delete", product_review_path(@product, review),
-              :data => {:confirm => "Are you sure?", :method => "delete"} %> -->
-          </li>
-        <% end %>
-      </ul>
-    <% else %>
-      <p>No reviews - help improve our site by adding one!</p>
-    <% end %>
-  </section>
-
-</div>
+          <!-- <%=link_to "Delete", product_review_path(@product, review),
+            :data => {:confirm => "Are you sure?", :method => "delete"} %> -->
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>No reviews - help improve our site by adding one!</p>
+  <% end %>
+</section>
